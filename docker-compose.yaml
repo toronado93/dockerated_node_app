@@ -1,0 +1,12 @@
+services:
+  web:
+    image: toronado93/example_docker_deploy_setup
+    ports:
+      - "1648:3960"
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: user123
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: testdb
